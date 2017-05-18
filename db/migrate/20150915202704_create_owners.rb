@@ -1,4 +1,5 @@
 class CreateOwners < ActiveRecord::Migration
+  
   def up
     create_table :owners do |t|
       t.string :name
@@ -8,4 +9,5 @@ class CreateOwners < ActiveRecord::Migration
   def down
     drop_table :owners
   end
+
 end
